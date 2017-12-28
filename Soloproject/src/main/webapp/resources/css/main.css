@@ -1,0 +1,218 @@
+   
+.body {
+  background-color: #444;
+  font-family: Questrial;
+  width:100%;
+  height:949px;
+}
+
+.main-app {
+  position : relative;
+  top:50px;
+  bottom:75px;
+  width: 100%;
+  height: 100vh;
+  max-width: 1100px;
+  margin: 0 auto;
+/*   padding-bottom:200px; */
+  overflow: hidden;
+  max-height: 850px;
+}
+
+.main-of {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 850px;
+  overflow: hidden;
+}
+
+.main-of li {
+  width: 14.9%;
+  height: auto;
+  min-height: 850px!important;
+  border: none;
+  display: inline-block;
+  transition: ease .2s;
+  margin: 0;
+  padding: 0;
+  font-size: 8px;
+  color: #ccc;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 20px;
+  text-shadow: 0px 1px 3px #333;
+  margin-left: -3px;
+  margin-right: -3px;
+  color: #222;
+}
+
+.main-of li:hover {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.main-of li:nth-child(odd):hover {
+  background-position: 100% center;
+}
+
+.main-of li:nth-child(even):hover {
+  background-position: 0 center;
+}
+
+.main-of li h3 {
+  transition: ease .25s;
+  font-size: 20px;
+  color: #999;
+}
+
+.main-of li:hover h3 {
+  color: #fff;
+}
+
+.heroes {
+  background: url('../images/123.jpg') no-repeat center center;
+  background-size: cover;
+  -webkit-box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  position: relative;
+  z-index: 12;
+}
+
+.players {
+  background: url('../images/2344.jpg') no-repeat center center;
+  background-size: cover;
+  -webkit-box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  position: relative;
+  z-index: 10;
+}
+
+.stats {
+  background: url('../images/678.JPG') no-repeat center center;
+  background-size: cover;
+  -webkit-box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  position: relative;
+  z-index: 9;
+}
+
+.story {
+  background: url('../images/567.jpg') no-repeat center center;
+  background-size: cover;
+  -webkit-box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  position: relative;
+  z-index: 8;
+}
+
+.fans {
+  background: url('../images/4566.jpg') no-repeat center center;
+  background-size: cover;
+  -webkit-box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  position: relative;
+  z-index: 7;
+}
+
+.events {
+  background: url('../images/789.jpg') no-repeat center center;
+  background-size: cover;
+  -webkit-box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  box-shadow: 8px 0px 12px -1px rgba(0, 0, 0, 0.53);
+  position: relative;
+  z-index: 6;
+}
+.active {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.fa {
+  font-size: 52px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  opacity: .2;
+  color: #81D4FA;
+  transition: ease .4s;
+}
+
+.main-of li:hover .fa {
+  top: 100px;
+  opacity: .95;
+  font-size: 80px;
+  color: #fff;
+}
+
+b {
+  font-size: 12px;
+  padding-top: 50px;
+}
+
+.main-of a {
+  display: none;
+}
+
+.main-of img {
+  display: none;
+}
+
+em {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: ease .3s;
+}
+
+.main-of li:hover em {
+  bottom: 100px;
+  color: #fff;
+  font-size: 22px;
+}
+
+@media (max-width:1000px) {
+  .main-of li h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:750px) {
+  .main-of li h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:650px) {
+  .main-of li {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .main-of li h3 {
+    font-size: 30px;
+  }
+  .main-app {
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  .main-of li {
+    padding: 0px;
+  }
+  .main-of li:hover {
+    padding: 0px;
+  }
+  .main-of {
+    height: 100%;
+  }
+}
