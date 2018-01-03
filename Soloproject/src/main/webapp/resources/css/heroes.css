@@ -56,3 +56,19 @@ p{
 .margin-right50{
 	margin-right : 50px;
 }
+ul{
+	color: #666;
+	padding-left : 15px;
+	font-size : 1.25em;
+	line-height: 1.6;
+	text-align : justify;
+	word-break: keep-all;
+}
+h6{
+	color: #666;
+	font-size : 1.25em;
+	line-height: 1.6;
+	text-align : justify;
+	word-break: keep-all;
+	font-weight : bold;
+}
