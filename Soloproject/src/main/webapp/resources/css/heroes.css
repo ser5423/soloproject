@@ -30,3 +30,29 @@ p{
 	text-align:justify;
 	word-break: keep-all;
 }
+.heroes-color{
+	color:#820024;
+}
+.btn-default:focus{
+	color: #fff;
+	background-color: #820024;
+	border-color: #820024;
+}
+.btn-default:hover{
+	color: #fff;
+	background-color: #820024;
+	border-color: #820024;
+}
+.btn-default:active{
+	color: #fff;
+	background-color: #820024;
+	border-color: #820024;
+}
+.history-display{
+	width: 100%;
+	display : block;
+	margin : 10px;
+}
+.margin-right50{
+	margin-right : 50px;
+}

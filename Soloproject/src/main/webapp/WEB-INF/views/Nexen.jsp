@@ -4,7 +4,7 @@
 <html data-ng-app="Nexen"><!-- 사이트 등록 -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Nexon</title>
+<title>Nexen</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">

@@ -1,67 +1,15 @@
 <div class="container">
-	<h1 class="text-center">구단 소개</h1>
-	<h5 class="text-center">모두 함께하는 프로야구를 만들어 갑니다.</h5>
+	<h1 class="text-center heroes-color">구단 소개</h1>
+	<h5 class="text-center heroes-color">모두 함께하는 프로야구를 만들어 갑니다.</h5>
 	
 	<div class="text-center heroes-margin">
 		<p class="btn-group" role="group">
-			<button type="button" id="club" class="btn btn-default btn-lg">구단 소개</button>
-			<button type="button" id="history" class="btn btn-default btn-lg">히어로즈 기록</button>
-			<button type="button" id="former" class="btn btn-default btn-lg">히어로즈 전신</button>
+			<input type="button" value="{{row.text}}" class="btn btn-default btn-lg heroes-color" data-ng-click="viewDiv($index)" data-ng-repeat="row in btArry"/>
 		</p>
 	</div>
-	<div class="row ">
-	<div class="col-md-12 heroes-margin text-center">
-	<iframe width="854" height="480" src="https://www.youtube.com/embed/cR1IRjPbXO8?autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-		</div>
-		<div class="col-md-6 text-center">
-			<strong>늘 같은 자리에 계셨습니다.<br>
-                                우리의 눈에, 우리의 마음속에<br>
-                                항상 같은 자리에 계십니다.</strong>
-			<p class="text-center">히어로즈를 응원해주시는 팬들을 위해 구단은<br>
-			 히어로즈의 역사를 이야기하려 합니다. </p>
-		</div>
-		<div class="col-md-6 img-cover">
-			<img src="resources/images/fr.jpg"/>
-		</div>
-		<div class="col-md-12 text-center heroes-margin2">
-			<p>연고에 상관없이 한결같이 응원을 보내주신 팬들이 우리의 눈에, 마음속에 계십니다.
-			20세기부터 21세기까지, 세기를 뛰어 넘어 같은 자리에 팬들이 계십니다.
-			도원구장에서, 수원구장, 목동구장 그리고 지금 이곳 고척스카이돔에서 한결같은 목소리로 변함없이 응원해 주시는 팬들이 계십니다.
-			히어로즈가 창단한 후, 서울에서, 제주도에서, 부산에서, 광주에서 히어로즈를 응원해주시는 팬들이 계십니다.
-			이분들을 위해 구단은 히어로즈의 역사를 이야기하려 합니다.</p>
-                            
-            <p>오랜 역사를 가진 MLB에는 많은 구단이 100년 이상의 전통을 자랑하고 있습니다.
-            	오랜 시간동안 경영주가 바뀌거나 프랜차이즈를 이전했거나 혹은 팀 명칭이 바뀌어도
-            	 팬들과 구단은 그들의 전신을 부정하지 않으며 전통과 역사를 소중히 생각 했습니다.
-            	 이처럼 전통과 역사 그리고 야구를 무엇보다 소중히 여기는 서울 히어로즈 프로야구단은 
-            	 2007년 현대유니콘스가 해체 된 후 기업들이 갖가지 이유를 대며 현대유니콘스의 인수를 
-            	 꺼려할 때 한국야구의 발전과 도약을 위해 현대 유니콘스 선수들과 프런트를 승계하여 서울 
-            	 히어로즈 프로야구단으로 창단하며 새로운 시작을 알립니다.</p>
-            
-            <strong>
-            	모두 함께하는 프로야구, 넥센히어로즈가 열정으로 만들어 가겠습니다.
-            </strong>
-            
-            <p>
-               	 태평양돌핀스 시절부터 활동해 온 현대유니콘스 선수들이 히어로즈에 있기에, 
-               	 현대유니콘스가 서울 연고를 가지고 있어 서울에 입성했기에, 
-               	 2008년 신인지명권 행사 때 현대유니콘스의 성적으로 그대로 이어 받아 지명권을 행사했기에, 
-               	 우리는 당당히 서울 히어로즈가 현대유니콘스의 전통을 이었다 라고 말합니다. 
-               	 누구도 부정할 수 없는 히어로즈의 전신은 바로 현대 유니콘스입니다. 
-               	 그리고 현대유니콘스 이전에는 태평양돌핀스가 있었고, 
-               	 태평양돌핀스 이전에는 청보핀토스와 삼미슈퍼스타즈가 있었습니다. 
-               	 히어로즈의 이야기는 20년전 프로야구 원년시절로 거슬러 올라갑니다.
-            </p>
-            
-            <p>
-                	포기할 수 없는 야구에 대한 열정! 
-                	야구를 사랑하는 팬 여러분의 염원! 
-                	한국 프로야구를 지켜내겠다는 굳건한 의지! 
-                	이 모든 것이 지금의 우리를 있게 했습니다. 
-                	힘든 시간을 함께 견뎌낸 우리. 우리 모두 함께하는 프로야구. 
-                	우리 모두 함께하는 야구. 넥센 히어로즈가 만들겠습니다. 
-                	2017년도, 10번째 시즌! 승리를 향해 뛰겠습니다.
-            </p>
+	<div class="row">
+		<div data-ng-repeat="rows in btArry" id="{{rows.type}}" data-ng-if="rows.toggle">
+			<div data-ng-include="rows.html"></div>
 		</div>
 	</div>
 </div>
