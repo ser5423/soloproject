@@ -16,7 +16,6 @@ app.controller("heroes", function($scope, $rootScope){ // 컨트롤러의 이름
 
 	$scope.contents = "resources/views/Heroes.html";
 	
-
 	$scope.custom2016 = true;
     $scope.toggleCustom2016 = function() {
         $scope.custom2016 = $scope.custom2016 === false ? true: false;
@@ -34,4 +33,5 @@ app.controller("heroes", function($scope, $rootScope){ // 컨트롤러의 이름
         $scope.custom2013 = $scope.custom2013 === false ? true: false;
     };
 	
+    
 });

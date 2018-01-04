@@ -20,6 +20,8 @@
 <!-- 	<link rel="stylesheet" href="resources/css/22.css" /> -->
 	<script type="text/javascript" src="resources/js/Nexen.js"></script>
 	<script type="text/javascript" src="resources/js/Heroes.js"></script>
+	<script type="text/javascript" src="resources/js/HeroesBI.js"></script>
+	<script type="text/javascript" src="resources/js/HeroesGuidance.js"></script>
 </head>
 <body>
 

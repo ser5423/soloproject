@@ -1,0 +1,15 @@
+<div class="container">
+	<h1 class="text-center heroes-color">구단 BI</h1>
+	<h5 class="text-center heroes-color">모두 함께하는 프로야구를 만들어 갑니다.</h5>
+	
+	<div class="text-center heroes-margin">
+		<p class="btn-group" role="group">
+			<input type="button" value="{{row.text}}" class="btn btn-default btn-lg heroes-color" data-ng-click="viewDiv($index)" data-ng-repeat="row in bIArry"/>
+		</p>
+	</div>
+	<div class="row">
+		<div data-ng-repeat="rows in bIArry" id="{{rows.type}}" data-ng-if="rows.toggle">
+			<div data-ng-include="rows.html"></div>
+		</div>
+	</div>
+</div>

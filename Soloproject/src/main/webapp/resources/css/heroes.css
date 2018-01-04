@@ -72,3 +72,45 @@ h6{
 	word-break: keep-all;
 	font-weight : bold;
 }
+/* BI부분 CSS */
+
+#emblem {
+    float: left;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    color: #000;
+    font-size: 1.085em;
+    font-weight: 800;
+    font-family: Armata;
+    line-height: 1;
+}
+
+.pp{
+	margin-bottom: 25px;
+	color:#666;
+	font-size: 1.25em;
+	line-height: 1.6;
+	word-break: keep-all;
+	text-align : center;
+}
+
+#mascot-h5 {
+    margin-bottom: 8px;
+    color: #820024;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#mascot-strong {
+    display: block;
+    margin-bottom: 33px;
+    color: #666;
+    font-size: 1.085em;
+    font-weight: 400;
+    line-height: 1;
+}
+#mascot-margin-top{
+	margin-top : 125px;
+}
