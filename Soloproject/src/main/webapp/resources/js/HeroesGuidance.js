@@ -40,7 +40,7 @@ app.controller("heroesguidance", function($scope, $rootScope){
 	
 	
 
-	$scope.bGGFFArry = [{no:"1",  title:"스테프핫도그",	 text:"스테프 핫도그, 메디스터 소시지",    text2:"11번 통로 맞은편",  url:"resources/images/guidance/fa/staff.png"},
+	$scope.bGitArry = [{no:"1",  title:"스테프핫도그",	 text:"스테프 핫도그, 메디스터 소시지",    text2:"11번 통로 맞은편",  url:"resources/images/guidance/fa/staff.png"},
 					   {no:"2",   title:"편의점",		 text:"캔맥주, 음료, 각종 스낵",        text2:"11번 통로 맞은편",  url:"resources/images/guidance/fa/store.png"},
 					   {no:"3",   title:"올떡볶이",	 text:"떡볶이, 튀김, 순대",           text2:"9번 통로 맞은편",   url:"resources/images/guidance/fa/all.jpg"},
 					   {no:"4",   title:"찡오랑",		 text:"버터구이 오징어, 수제 닭꼬치",     text2:"8번 통로 맞은편",   url:"resources/images/guidance/fa/jjing.png"},
@@ -50,8 +50,8 @@ app.controller("heroesguidance", function($scope, $rootScope){
 					   {no:"7",   title:"뉴욕핫도그",	 text:"치즈텐더샌드, 뉴용칠리 핫도그",     text2:"6번 통로 맞은편",   url:"resources/images/guidance/fa/ny.png"},
 					   {no:"8",   title:"공씨네 주먹밥",  text:"참치김치, 구운스팸 주먹밥 등",     text2:"5번 통로 맞은편",   url:"resources/images/guidance/fa/gong.png"},
 					   {no:"9",   title:"타코비",       text:"타코야끼, 통통 오징어튀김",       text2:"4번 통로 맞은편",   url:"resources/images/guidance/fa/tako.jpg"},
-					   {no:"10",  title:"편의점",       text:"캔맥주, 음료, 각종 스낵",       text2:"2번통 로 맞은편",    url:"resources/images/guidance/fa/store.png"},
-					   {no:"11",  title:"더블핸스테이크",  text:"테이크 아웃 스테이크",          text2:"2번통 로 맞은편",    url:"resources/images/guidance/fa/double.jpg"},
+					   {no:"10",  title:"편의점",       text:"캔맥주, 음료, 각종 스낵",       text2:"2번 통로 맞은편",    url:"resources/images/guidance/fa/store.png"},
+					   {no:"11",  title:"더블핸스테이크",  text:"테이크 아웃 스테이크",          text2:"2번 통로 맞은편",    url:"resources/images/guidance/fa/double.jpg"},
 					   {no:"12",  title:"탐앤탐스",      text:"아메리카노, 스무디, 도그프레즐",  text2:"9번 10번 통로 사이", url:"resources/images/guidance/fa/tom.png"},
 					   {no:"13",  title:"차이나플레인",   text:"자장면, 탕수육",              text2:"9번 10번 통로 사이", url:"resources/images/guidance/fa/china.jpg"},
 					   {no:"14",  title:"뉴욕버거",      text:"뉴욕버거, 뉴욕돔구장팩",        text2:"9번 10번 통로 사이", url:"resources/images/guidance/fa/nyb.jpg"},
@@ -63,4 +63,33 @@ app.controller("heroesguidance", function($scope, $rootScope){
 					   {no:"20",  title:"뉴욕버거",      text:"뉴욕버거, 뉴욕 돔구장팩",        text2:"3번 4번 통로 사이",  url:"resources/images/guidance/fa/nyb.jpg"},
 					   {no:"21",  title:"BBQ(가판)",    text:"황금 올리브 치킨, 순살 크래커 치킨", text2:"7번 통로 맞은편",   url:"resources/images/guidance/fa/bbq.jpg"},
 					   {no:"22",  title:"BBQ(가판)",    text:"황금 올리브 치킨, 순살 크래커 치킨", text2:"5번 통로 맞은편",   url:"resources/images/guidance/fa/bbq.jpg"}];
+	
+	$scope.bGifArry = [{no:"1",   title:"올떡볶이",	   text:"떡볶이, 튀김, 순대",          text2:"32번 통로 맞은편",    url:"resources/images/guidance/fa/all.jpg"},
+					   {no:"2",   title:"올떡볶이",	   text:"떡볶이, 튀김, 순대",          text2:"21번 통로 맞은편",    url:"resources/images/guidance/fa/all.jpg"},
+					   {no:"3",   title:"편의점",	 	   text:"캔맥주, 음료, 각종 스낵",       text2:"28~29번 통로 사이", url:"resources/images/guidance/fa/store.png"},
+					   {no:"4",   title:"찡오랑",		   text:"버터구이 오징어, 수제 닭꼬치",    text2:"28~29번 통로 사이", url:"resources/images/guidance/fa/jjing.png"},
+					   {no:"5",   title:"피자헛",	 	   text:"리치골드 베이컨 포테이토 피자 등",  text2:"28~29번 통로 사이", url:"resources/images/guidance/fa/pizzahut.png"},
+					   {no:"6",   title:"더블핸스테이크",  text:"테이크 아웃 스테이크",          text2:"26~27번 통로 사이", url:"resources/images/guidance/fa/double.jpg"},
+					   {no:"7",   title:"뉴욕버거",	   text:"뉴욕버거, 뉴욕돔구장팩",        text2:"24~25번 통로 사이", url:"resources/images/guidance/fa/nyb.jpg"},
+					   {no:"8",   title:"공씨네 주먹밥",   text:"참치김치, 구운스팸 주먹밥 등",    text2:"24~25번 통로 사이", url:"resources/images/guidance/fa/gong.png"},
+					   {no:"9",   title:"탐앤탐스",       text:"아메리카노, 스무디, 도그프레즐", text2:"24~25번 통로 사이", url:"resources/images/guidance/fa/tom.png"},
+					   {no:"10",  title:"편의점",        text:"캔맥주, 음료, 각종 스낵",       text2:"24~25번 통로 사이", url:"resources/images/guidance/fa/store.png"}];
+	
+	 $scope.bGotArry = [{no:"1",   title:"편의점",	   text:"캔맥주, 음료, 각종 스낵",       text2:"1번 통로 맞은편", url:"resources/images/guidance/fa/store.png"},
+						{no:"2",   title:"뉴욕버거",	   text:"뉴욕버거, 뉴욕돔구장팩",       text2:"외야 4번 통로 맞은편", url:"resources/images/guidance/fa/nyb.jpg"},
+						{no:"3",   title:"더블핸스테이크", text:"테이크 아웃 스테이크",          text2:"2번 통로 맞은편", url:"resources/images/guidance/fa/double.jpg"},
+						{no:"4",   title:"피자헛",	   text:"리치골드 베이컨 포테이토 피자 등",  text2:"2번 통로 맞은편", url:"resources/images/guidance/fa/pizzahut.png"},
+						{no:"5",   title:"탐앤탐스",     text:"아메리카노, 스무디, 도그프레즐", text2:"2번 통로 맞은편", url:"resources/images/guidance/fa/tom.png"},
+						{no:"6",   title:"공씨네 주먹밥",  text:"참치김치, 구운스팸 주먹밥 등",    text2:"3번 통로 맞은편", url:"resources/images/guidance/fa/gong.png"},
+						{no:"7",   title:"타코비",       text:"타코야끼, 통통 오징어튀김",       text2:"3번 통로 맞은편",   url:"resources/images/guidance/fa/tako.jpg"},
+						{no:"8",   title:"스테프핫도그",   text:"스테프 핫도그, 메디스터 소시지",    text2:"4번 통로 맞은편",  url:"resources/images/guidance/fa/staff.png"},
+						{no:"9",   title:"편의점",	 	text:"캔맥주, 음료, 각종 스낵",       text2:"4번 통로 맞은편", url:"resources/images/guidance/fa/store.png"},
+						{no:"10",  title:"올떡볶이",	    text:"떡볶이, 튀김, 순대",          text2:"2~3번 통로 맞은편",    url:"resources/images/guidance/fa/all.jpg"},
+						{no:"11",  title:"찡오랑",		text:"버터구이 오징어, 수제 닭꼬치",    text2:"2~3번 통로 사이", url:"resources/images/guidance/fa/jjing.png"},
+					    {no:"22",  title:"BBQ(가판)",    text:"황금 올리브 치킨, 순살 크래커 치킨", text2:"2~3번 통로 사이",   url:"resources/images/guidance/fa/bbq.jpg"}];
+	 
+	 $scope.bGofArry = [{no:"1",   title:"BBQ(가판)",   text:"황금 올리브 치킨, 순살 크래커 치킨", text2:"21~22번 통로 사이",   url:"resources/images/guidance/fa/bbq.jpg"},
+		 				{no:"2",   title:"편의점",	   text:"캔맥주, 음료, 각종 스낵",        text2:"25~26번 통로 사이",   url:"resources/images/guidance/fa/store.png"},
+						{no:"3",   title:"아이엠강정",	   text:"순살 강정, 갈릭 강정, 오짱",      text2:"25~26번 통로 사이",   url:"resources/images/guidance/fa/gang.png"},
+];
 });
