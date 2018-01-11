@@ -3,9 +3,9 @@ app.controller("heroes", function($scope, $rootScope){ // 컨트롤러의 이름
 	// rootScope로 상위로 올리게 되면 지역변수에서 전역변수로 변경이 되서 다른 곳에서도 사용이 가능함
 	$rootScope.navEvent();
 	
-	$scope.btArry = [{text:"구단 소개",   type:"club", toggle: true, html: "resources/views/heroes/club.html"},
-		             {text:"히어로즈 기록", type:"history", toggle: false, html: "resources/views/heroes/history.html"},
-		             {text:"히어로즈 전신", type:"former", toggle: false, html: "resources/views/heroes/former.html"}];
+	$scope.btArry = [{text:"구단 소개",   type:"club", toggle: true, html: "resources/views/Heroes/introduction/club.html"},
+		             {text:"히어로즈 기록", type:"history", toggle: false, html: "resources/views/Heroes/introduction/history.html"},
+		             {text:"히어로즈 전신", type:"former", toggle: false, html: "resources/views/Heroes/introduction/former.html"}];
 	
 	$scope.viewDiv = function(index){
 		for(var i = 0; i < $scope.btArry.length; i++){

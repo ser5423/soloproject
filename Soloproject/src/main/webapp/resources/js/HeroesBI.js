@@ -4,9 +4,9 @@ app.controller("heroesbi", function($scope, $rootScope){
 	
 	$scope.contents = "resources/views/Heroes-bi.html";
 	
-	$scope.bIArry = [{text:"엠블럼",  type:"emblem", toggle: true, html: "resources/views/bi/emblem.html"},
-				     {text:"마스코트", type:"mascot", toggle: false, html: "resources/views/bi/mascot.html"},
-				     {text:"유니폼",  type:"former", toggle: false, html: "resources/views/bi/uniform.html"}];
+	$scope.bIArry = [{text:"엠블럼",  type:"emblem", toggle: true, html: "resources/views/Heroes/bi/emblem.html"},
+				     {text:"마스코트", type:"mascot", toggle: false, html: "resources/views/Heroes/bi/mascot.html"},
+				     {text:"유니폼",  type:"former", toggle: false, html: "resources/views/Heroes/bi/uniform.html"}];
 
 	$scope.viewDiv = function(index){
 		for(var i = 0; i < $scope.bIArry.length; i++){

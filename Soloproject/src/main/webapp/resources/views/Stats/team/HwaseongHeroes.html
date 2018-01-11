@@ -1,0 +1,40 @@
+<div class="col-md-12 text-center">
+<div>
+	  <table class="table_team">
+	    <thead>
+		    <tr>
+		      <th data-ng-click="sortBy('ranking')">순위</th>
+		      <th data-ng-click="sortBy('club')">구단</th>
+		      <th data-ng-click="sortBy('victory')">승</th>
+		      <th data-ng-click="sortBy('loss')">패</th>
+		      <th data-ng-click="sortBy('draw')">무승부</th>
+		      <th data-ng-click="sortBy('winningrate')">승률</th>
+		      <th data-ng-click="sortBy('continuous')">연속</th>
+		      <th data-ng-click="sortBy('hit')">안타</th>
+		      <th data-ng-click="sortBy('homerun')">홈런</th>
+		      <th data-ng-click="sortBy('steal')">도루</th>
+		      <th data-ng-click="sortBy('goal')">득점</th>
+		      <th data-ng-click="sortBy('lp')">실점</th>
+		      <th data-ng-click="sortBy('blunder')">실책</th>
+		    </tr>
+	    </thead>
+	    <tbody>
+		    <tr data-ng-repeat="rows in farmteam | orderBy:propertyName:reverse">
+		    	<td data-ng-bind="rows.ranking"></td>
+		    	<td data-ng-bind="rows.club"></td>
+		    	<td data-ng-bind="rows.victory"></td>
+		    	<td data-ng-bind="rows.loss"></td>
+		    	<td data-ng-bind="rows.draw"></td>
+		    	<td data-ng-bind="rows.winningrate"></td>
+		    	<td data-ng-bind="rows.continuous"></td>
+		    	<td data-ng-bind="rows.hit"></td>
+		    	<td data-ng-bind="rows.homerun"></td>
+		    	<td data-ng-bind="rows.steal"></td>
+		    	<td data-ng-bind="rows.goal"></td>
+		    	<td data-ng-bind="rows.lp"></td>
+		    	<td data-ng-bind="rows.blunder"></td>
+		    </tr>
+	    </tbody>
+	  </table>
+	</div>
+</div>

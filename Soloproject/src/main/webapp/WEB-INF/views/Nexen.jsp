@@ -14,14 +14,19 @@
 	<script type="text/javascript" src="resources/angular/angular.min.js"></script> <!-- 스크립트로 링크검 -->
 	<script type="text/javascript" src="resources/angular/angular-route.min.js"></script> <!-- angular.min이 항상 위에 있어야됨 -->
 <!-- 위 두개의 스크립트로 싱글페이지가 구성됨 -->
-	<link rel="stylesheet" href="resources/css/nav.css">
+	
 	<link rel="stylesheet" href="resources/css/main.css">
 	<link rel="stylesheet" href="resources/css/heroes.css">
-<!-- 	<link rel="stylesheet" href="resources/css/22.css" /> -->
+	<link rel="stylesheet" href="resources/css/stats.css">
+	<link rel="stylesheet" href="resources/css/events.css">
+	<link rel="stylesheet" href="resources/css/nav.css">
+	
 	<script type="text/javascript" src="resources/js/Nexen.js"></script>
 	<script type="text/javascript" src="resources/js/Heroes.js"></script>
 	<script type="text/javascript" src="resources/js/HeroesBI.js"></script>
 	<script type="text/javascript" src="resources/js/HeroesGuidance.js"></script>
+	<script type="text/javascript" src="resources/js/Stats.js"></script>
+	<script type="text/javascript" src="resources/js/Picture.js"></script>
 </head>
 <body>
 

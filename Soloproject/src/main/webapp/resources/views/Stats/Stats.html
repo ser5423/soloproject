@@ -1,0 +1,15 @@
+<div class="container">
+	<h1 class="text-center heroes-color">팀 순위</h1>
+	<h5 class="text-center heroes-color">전통과 역사를 일구어 나가는 넥센히어로즈. 선수들이 흘린 굵은 땀방울을 기억합니다.</h5>
+	
+	<div class="text-center heroes-margin">
+		<p class="btn-group" role="group">
+			<input type="button" value="{{rows.text}}" class="btn btn-default btn-lg heroes-color" data-ng-click="viewDiv($index)" data-ng-repeat="rows in bSTTArry"/>
+		</p>
+	</div>
+	<div class="row">
+		<div data-ng-repeat="row in bSTTArry" id="{{row.type}}" data-ng-if="row.toggle">
+			<div data-ng-include="row.html"></div>
+		</div>
+	</div>
+</div>

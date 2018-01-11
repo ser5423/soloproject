@@ -4,18 +4,18 @@ app.controller("heroesguidance", function($scope, $rootScope){
 	
 	$scope.contents = "resources/views/Heroes-Guidance.html";
 	
-	$scope.bGArry = [{text:"고척 스카이돔",  type:"gochuck", toggle: true, html: "resources/views/Guidance/gochuck.html"},
-				     {text:"화성 베이스볼파크", type:"hwaseong", toggle: false, html: "resources/views/Guidance/hwaseong.html"}];
+	$scope.bGArry = [{text:"고척 스카이돔",  type:"gochuck", toggle: true, html: "resources/views/Heroes/Guidance/gochuck.html"},
+				     {text:"화성 베이스볼파크", type:"hwaseong", toggle: false, html: "resources/views/Heroes/Guidance/hwaseong.html"}];
 	
-	$scope.bGGArry = [{text:"고척 스카이돔",  type:"go", toggle: true, html: "resources/views/Guidance/Details/go.html"},
-					  {text:"편의시설",  type:"fa", toggle: false, html: "resources/views/Guidance/Details/fa.html"},
-					  {text:"찾아오시는 길",  type:"way", toggle: false, html: "resources/views/Guidance/Details/way.html"},
-	     			  {text:"주차안내", type:"parking", toggle: false, html: "resources/views/Guidance/Details/parking.html"}];
+	$scope.bGGArry = [{text:"고척 스카이돔",  type:"go", toggle: true, html: "resources/views/Heroes/Guidance/Details/go.html"},
+					  {text:"편의시설",  type:"fa", toggle: false, html: "resources/views/Heroes/Guidance/Details/fa.html"},
+					  {text:"찾아오시는 길",  type:"way", toggle: false, html: "resources/views/Heroes/Guidance/Details/way.html"},
+	     			  {text:"주차안내", type:"parking", toggle: false, html: "resources/views/Heroes/Guidance/Details/parking.html"}];
 
-	$scope.bGGFArry = [{text:"내야 2층",  type:"in-two", toggle: true, html: "resources/views/Guidance/Details/floar/in-two.html"},
-					  {text:"내야 4층",  type:"in-four", toggle: false, html: "resources/views/Guidance/Details/floar/in-four.html"},
-					  {text:"외야 3층",  type:"out-third", toggle: false, html: "resources/views/Guidance/Details/floar/out-third.html"},
-					  {text:"외야 4층", type:"out-four", toggle: false, html: "resources/views/Guidance/Details/floar/out-four.html"}];
+	$scope.bGGFArry = [{text:"내야 2층",  type:"in-two", toggle: true, html: "resources/views/Heroes/Guidance/Details/floar/in-two.html"},
+					  {text:"내야 4층",  type:"in-four", toggle: false, html: "resources/views/Heroes/Guidance/Details/floar/in-four.html"},
+					  {text:"외야 3층",  type:"out-third", toggle: false, html: "resources/views/Heroes/Guidance/Details/floar/out-third.html"},
+					  {text:"외야 4층", type:"out-four", toggle: false, html: "resources/views/Heroes/Guidance/Details/floar/out-four.html"}];
 	
 	$scope.viewDiv = function(index){
 		for(var i = 0; i < $scope.bGArry.length; i++){
