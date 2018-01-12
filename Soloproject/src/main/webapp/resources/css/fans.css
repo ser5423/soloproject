@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+ul.heroesSNS {
+    margin: -60px 0 0 -30px;
+    list-style: none;
+    overflow: hidden;
+}
+
+ul.heroesSNS li {
+    float: left;
+    width: 340px;
+    margin: 60px 0 0 30px;
+    color: #666;
+    font-size: 1.085em;
+    letter-spacing: -.0425em;
+}
+
+a:link, a:visited, a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul.heroesSNS li img {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.sns_width{
+	position: relative;
+    left: 17.5%;
+}
+}

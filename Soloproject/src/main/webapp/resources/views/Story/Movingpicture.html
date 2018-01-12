@@ -1,1 +1,21 @@
-영상
+<div class="container">
+	<h1 class="text-center heroes-color">히어로즈 영상</h1>
+	<h5 class="text-center heroes-color heroes-margin">늘 같은 자리에서 팬 여러분과 함께 새로운 역사를 만들어 가겠습니다.</h5>
+		<div class="col-md-12" data-ng-repeat="row in move">
+			<div class="col-md-5" >
+				<iframe width="100%" height="350" data-ng-src="{{row.murl | trusted}}" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="col-md-7">
+				<h5 id="mascot-h5">
+					{{row.h5}}
+				</h5>
+				<strong id="mascot-strong">{{row.st}}</strong>
+				<p>
+					{{row.pp}}
+				</p>
+			</div>
+			<div class="col-md-12">
+			<hr>
+			</div>
+		</div>
+</div>
