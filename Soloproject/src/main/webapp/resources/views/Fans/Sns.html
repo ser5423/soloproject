@@ -6,7 +6,7 @@
 	<ul class="heroesSNS">
 				<li data-ng-repeat="rows in Sns">
 					<a href="{{rows.a_tag}}" target="_blank" title="새 창 열림"><img src="{{rows.fimg}}" alt="{{rows.alt}}" /></a>
-					<img src="{{rows.simg}}" alt="{{rows.alt2}}" />
+					<img data-ng-src="{{rows.simg}}" alt="{{rows.alt2}}" />
 					{{rows.text}}
 				</li>
 				

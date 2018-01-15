@@ -1,6 +1,6 @@
 <div class="text-center heroes-margin">
 		<p class="btn-group" role="group">
-			<input type="button" value="{{row.text}}" class="btn btn-default btn-lg heroes-color" data-ng-click="viewDiv2($index)" data-ng-repeat="row in bGGArry"/>
+			<input type="button" value="{{row.text}}" class="btn btn-default btn-lg heroes-color" data-ng-class="{bgActive : row.toggle}"  data-ng-click="viewDiv2($index)" data-ng-repeat="row in bGGArry"/>
 		</p>
 	</div>
 	<div class="row">

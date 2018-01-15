@@ -1,0 +1,18 @@
+<div class="container">
+	<h1 class="text-center heroes-color">선수단</h1>
+	<h5 class="text-center heroes-color">넥센히어로즈는 젊은 패기와 도전으로 꿈을 향해 뛰겠습니다.</h5>
+	
+	<div class="text-center heroes-margin">
+		<p class="btn-group" role="group">
+			<input type="button" value="{{row.text}}" class="btn btn-default btn-lg heroes-color" data-ng-class="{bgActive : row.toggle}" data-ng-click="viewDiv(row, $index)" data-ng-repeat="row in bSPArry"/>
+		</p>
+	</div>
+	<div class="row ">
+		<div class="div_label">
+			<label class="labella">PLAYER SEARCH</label>
+			<input id="search" type="text" class="inputbox" placeholder="선수이름으로 검색" data-ng-model="bSPType.name">
+		</div>
+		
+		<div data-ng-include="playersViews"></div>
+	</div>
+</div>

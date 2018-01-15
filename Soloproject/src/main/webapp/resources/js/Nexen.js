@@ -1,5 +1,5 @@
 // 앵귤라 모듈 만들기
-var app = angular.module("Nexen", ["ngRoute","Heroes","Heroesbi","Heroesguidance","Stats","Picture","Move","Sns"]);
+var app = angular.module("Nexen", ["ngRoute","Heroes","Heroesbi","Heroesguidance","Players","Stats","Picture","Move","Sns"]);
 		
 // 라우터 처리 부분 (싱글 페이지 적용)
 app.config(function($routeProvider){
@@ -14,6 +14,9 @@ app.config(function($routeProvider){
 	}).when("/HeroesGuidance", {
 		templateUrl : "resources/views/index.html",
 		controller : "heroesguidance"
+	}).when("/Players", {
+		templateUrl : "resources/views/index.html",
+		controller : "players"
 	}).when("/Stats", {
 		templateUrl : "resources/views/index.html",
 		controller : "stats"

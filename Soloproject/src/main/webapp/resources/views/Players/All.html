@@ -1,0 +1,64 @@
+<div class="col-md-12 text-center">
+	<div class="players_div" data-ng-repeat="rows in playersDataSources | filter : bSPType">
+		<div class="players_div_div">
+			<img data-ng-if="rows.image" data-ng-src="resources/images/players/{{rows.image}}"/>
+			<img data-ng-if="!rows.image" src="resources/images/players/none.jpg"/>
+			<div class="players_div_span">
+				<div class="players_div_strong">
+					<div class="players_div_em">
+						NO.{{rows.p_no}}
+					</div>
+					<div class="players_div_sspan">
+						<div class="players_div_sspan_div">
+							{{rows.type}} <br>
+							{{rows.name}}
+						</div>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+		</div>
+		<div class="players_div_div">
+			<div class="">
+				<div class="players_div_em_text">
+						NO.{{rows.p_no}}
+				</div>
+				<div class="players_div_em_text2">
+						{{rows.name}}
+				</div>
+			</div>
+				<table summary="선수 정보 테이블 입니다">
+			        <colgroup>
+			          <col width="100px" />
+			          <col width="*" />
+			        </colgroup>
+			        <tr>
+			          <th scope="row" class="grey-th"><span>포지션</span></th>
+			          <td class="first-th"><span>{{rows.type}}&nbsp;</span></td>
+			        </tr>
+			        <tr>
+			          <th scope="row" class="grey-th"><span>투타</span></th>
+			          <td><span>{{rows.ph}}&nbsp;</span></td>
+			        </tr>
+			        <tr>
+			          <th scope="row" class="grey-th"><span>생년월일</span></th>
+			          <td><span>{{rows.date_of_birth}}&nbsp;</span></td>
+			        </tr>
+			        <tr>
+			          <th scope="row" class="grey-th"><span>신장/체중</span></th>
+			          <td><span>{{rows.hw}}</span></td>
+			        </tr>
+			        <tr>
+			          <th scope="row" class="grey-th"><span>출신학교</span></th>
+			          <td><span>{{rows.soo}}</span></td>
+			        </tr>
+			        <tr>
+			          <th scope="row" class="last-th grey-th"><span>현황</span></th>
+			            <td class="last-td"><span>{{rows.status}}</span></td>
+			        </tr>
+			      </table>
+		</div>
+	</div>
+</div>

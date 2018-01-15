@@ -29,6 +29,7 @@
 	<link rel="stylesheet" href="resources/css/picture.css">
 	<link rel="stylesheet" href="resources/css/movepicture.css">
 	<link rel="stylesheet" href="resources/css/fans.css">
+	<link rel="stylesheet" href="resources/css/players.css">
 	
 	
 	<script type="text/javascript" src="resources/js/Nexen.js"></script>
@@ -39,6 +40,7 @@
 	<script type="text/javascript" src="resources/js/Picture.js"></script>
 	<script type="text/javascript" src="resources/js/Move.js"></script>
 	<script type="text/javascript" src="resources/js/Sns.js"></script>
+	<script type="text/javascript" src="resources/js/Players.js"></script>
 	
 </head>
 <body>

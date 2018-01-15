@@ -6,27 +6,22 @@
 	<select id="test" resultType="hashmap">
 		select '테스트' as data
 	</select>
-	<insert id="addUser" parameterType="hashmap">
-		insert into test (email, pw) values (#{email}, #{pw})
-	</insert>
-	<select id="login" parameterType="hashmap" resultType="hashmap">
-		select * 
-			from test
-		where
-			del_yn = 'N' and
-		 	email = #{email} 
-			and pw = #{pw}
+	<select id="all" resultType="hashmap">
+		select * from players
 	</select>
-	<update id="upUser" parameterType="hashmap">
-		update test
-		set email = #{email}
-			,pw	  = #{pw}
-			,name = #{name}
-		where no  = #{no}
-	</update>
-	<update id="out" parameterType="hashmap">
-		update test
-		set del_yn = 'Y'
-		where no  = #{no}
-	</update>
+	<select id="staff" resultType="hashmap">
+		select * from players where type = '코칭스태프'
+	</select>
+	<select id="pitcher" resultType="hashmap">
+		select * from players where type = '투수'
+	</select>
+	<select id="catcher" resultType="hashmap">
+		select * from players where type = '포수'
+	</select>
+	<select id="infielder" resultType="hashmap">
+		select * from players where type = '내야수'
+	</select>
+	<select id="outfielder" resultType="hashmap">
+		select * from players where type = '외야수'
+	</select>
 </mapper>
