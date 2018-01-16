@@ -51,3 +51,8 @@ app.controller("events", function($scope, $rootScope){
 	$scope.contents = "resources/views/Events/Events.html";
 });
 
+
+
+
+
+

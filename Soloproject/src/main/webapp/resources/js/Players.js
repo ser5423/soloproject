@@ -30,7 +30,7 @@ app.controller("players", function($scope, $rootScope, $http){
 		$http.post("all")
 			.then(function(result){
 				$scope.playersDataSources = result.data.all;
-				console.log(result.data, $scope.playersDataSources);
+//				console.log(result.data, $scope.playersDataSources);
 //				console.log(result.data.all[0]);
 			},function(result){
 				console.log("실패");

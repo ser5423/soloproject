@@ -1,9 +1,9 @@
 <div class="col-md-12">
 	<span class="span-float">
-		<input type="button" value="{{row.text}}" class="span-input" data-ng-click="viewDivF($index)" data-ng-repeat="row in bGGFArry"/>
+		<input type="button" value="{{row.text}}" class="span-input " data-ng-click="viewDivF($index)" data-ng-class="{spaniinputt : row.toggle}" data-ng-repeat="row in bGGFArry"/>
 	</span>
 	<div class="row">
-		<div data-ng-repeat="rows in bGGFArry" id="{{rows.type}}" data-ng-if="rows.toggle">
+		<div data-ng-repeat="rows in bGGFArry" id="{{rows.type}}"  data-ng-if="rows.toggle">
 			<div data-ng-include="rows.html"></div>
 		</div>
 	</div>

@@ -1,10 +1,57 @@
 @CHARSET "UTF-8";
-
+/* @media (max-width:1920px) { */
+/* 	.players_div { */
+/* 		float : left; */
+/* 		margin : 0 0 20px 19px; */
+/* 		width : 48%; */
+/* 	} */
+/* } */
 .players_div {
-	float : left;
-	margin : 0 0 20px 19px;
-	width : 48%;
+		float : left;
+		margin : 0 0 20px 19px;
+		width : 48%;
+	}
+.btn-group-lg>.btn, .btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
 }
+@media (min-width:768px) {
+	.players_div {
+		float : left;
+		margin : 0 0 20px 19px;
+		width : 47%;
+	}
+}
+@media (max-width:767px) {
+	.players_div {
+	float : left;
+	margin : 0 auto 20px auto;
+	width : 48%;
+	}
+}
+@media (max-width:500px) {
+	.players_div {
+	float : left;
+	margin : 0 auto 20px auto;
+	width : 100%;
+	}
+}
+@media (max-width:551px){
+	.btn-lg {
+		font-size : 13px;
+	}
+}
+@media (max-width:469px){
+	.btn-lg {
+		font-size : 10px;
+	}
+}
+
+
+
+
 .players_div_div {
 	display: inline-block;
     position: relative;
@@ -68,7 +115,7 @@
 	float: left;
 	text-align: right;
 	padding-right : 10px;
-    width: 50%;
+    width: 30%;
     font-family: Armata;
     font-size: 1.5em;
     letter-spacing: -.0425em;
@@ -76,7 +123,7 @@
 .players_div_em_text2 {
 	float: left;
 	text-align: left;
-    width: 50%;
+    width: 70%;
     font-family: Armata;
     font-size: 1.5em;
     letter-spacing: -.0425em;
