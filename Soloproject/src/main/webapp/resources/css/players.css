@@ -171,3 +171,34 @@ tbody {
     border: 0;
     box-sizing: border-box;
 }
+
+/* 선수 1군 2군 분류 css */
+.player_span_float {
+	width : 70%;
+}
+
+.player_span_input{
+	float: right;
+    margin-left: 20px;
+    color: #b2b2b2;
+    font-size: 1.25em;
+    font-weight: 700;
+    cursor : pointer;
+    background-color: #fff;
+    border-color : #fff;
+    border: 1px solid transparent;
+}
+
+.player_span_input:active {
+    padding-left: 20px;
+    color: #bb1b39;
+    background: url(../images/guidance/bc.png) no-repeat 0 50%;
+    outline: none;
+}
+
+.playerspaninput {
+    padding-left: 20px;
+    color: #bb1b39;
+    background: url(../images/guidance/bc.png) no-repeat 0 50%;
+    outline: none;
+}

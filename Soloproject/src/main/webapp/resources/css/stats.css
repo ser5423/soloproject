@@ -47,3 +47,11 @@ tbody {
     vertical-align: middle;
     border-color: inherit;
 }
+
+
+.heroes_tr {
+    border: 2px solid #cf0b42;
+    color: #bb1b39;
+    font-weight: 700;
+    background-color: #ffeff2;
+}

@@ -1,5 +1,5 @@
 <div class="col-md-12 text-center">
-	<div class="players_div" data-ng-repeat="rows in playersDataSources | filter : bSPType">
+	<div class="players_div" data-ng-repeat="rows in playersDataSources | filter : bSPType | filter : bSPOType">
 		<div class="players_div_div">
 			<img data-ng-if="rows.image" data-ng-src="resources/images/players/{{rows.image}}"/>
 			<img data-ng-if="!rows.image" src="resources/images/players/none.jpg"/>

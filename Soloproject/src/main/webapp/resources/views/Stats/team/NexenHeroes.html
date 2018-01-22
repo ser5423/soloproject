@@ -19,7 +19,7 @@
 		    </tr>
 	    </thead>
 	    <tbody>
-		    <tr data-ng-repeat="rows in team | orderBy:propertyName:reverse">
+		    <tr data-ng-class="{'heroes_tr' : rows.club == '넥센'}" data-ng-repeat="rows in team | orderBy:propertyName:reverse">
 		    	<td data-ng-bind="rows.ranking"></td>
 		    	<td data-ng-bind="rows.club"></td>
 		    	<td data-ng-bind="rows.victory"></td>

@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+#history div *.alignLeft {
+    float: left;
+    margin-right: 18px;
+}
+
+div.contentTab * {
+    letter-spacing: -.0425em;
+}
+
+#history div>h6 {
+    margin-bottom: 6px;
+    color: #820024;
+    font-size: 1.25em;
+    line-height: 1;
+}
+
+#history div>p {
+    margin-bottom: 25px;
+    color: #666;
+    font-size: 1.25em;
+    line-height: 1.5;
+    text-align: justify;
+    word-break: keep-all;
+    margin-bottom : 50px;
+}
+
+@media (max-width : 767px){
+	#history div>p {
+	    margin-bottom: 25px;
+	    color: #666;
+	    font-size: 0.9em;
+	    line-height: 1.5;
+	    text-align: justify;
+	    word-break: keep-all;
+	    margin-bottom : 70px;
+	}
+}
+
+#history div *.alignRight {
+    float: right;
+    margin-left: 18px;
+}

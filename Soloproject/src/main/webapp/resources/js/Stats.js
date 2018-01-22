@@ -42,4 +42,9 @@ app.controller("stats", function($scope, $rootScope){
 	    $scope.reverse = ($scope.propertyName === propertyName) ? !$scope.reverse : false;
 	    $scope.propertyName = propertyName;
 	  };
+	  
+	  $scope.sortByF = function(propertyNameF) {
+	    $scope.reverseF = ($scope.propertyNameF === propertyNameF) ? !$scope.reverseF : false;
+	    $scope.propertyNameF = propertyNameF;
+	  };
 });

@@ -12,6 +12,9 @@
 			<label class="labella">PLAYER SEARCH</label>
 			<input id="search" type="text" class="inputbox" placeholder="선수이름으로 검색" data-ng-model="bSPType.name">
 		</div>
+		<span class="span-float player_span_float">
+			<input type="button" value="{{rows.text2}}" class="player_span_input" data-ng-class="{playerspaninput : rows.toggle}" data-ng-click="viewDivo(rows, $index)"  data-ng-repeat="rows in bSPOArry"/>
+		</span>
 		
 		<div data-ng-include="playersViews"></div>
 	</div>

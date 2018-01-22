@@ -3,23 +3,23 @@
 	  <table class="table_team">
 	    <thead>
 		    <tr>
-		      <th data-ng-click="sortBy('ranking')">순위</th>
-		      <th data-ng-click="sortBy('club')">구단</th>
-		      <th data-ng-click="sortBy('victory')">승</th>
-		      <th data-ng-click="sortBy('loss')">패</th>
-		      <th data-ng-click="sortBy('draw')">무승부</th>
-		      <th data-ng-click="sortBy('winningrate')">승률</th>
-		      <th data-ng-click="sortBy('continuous')">연속</th>
-		      <th data-ng-click="sortBy('hit')">안타</th>
-		      <th data-ng-click="sortBy('homerun')">홈런</th>
-		      <th data-ng-click="sortBy('steal')">도루</th>
-		      <th data-ng-click="sortBy('goal')">득점</th>
-		      <th data-ng-click="sortBy('lp')">실점</th>
-		      <th data-ng-click="sortBy('blunder')">실책</th>
+		      <th data-ng-click="sortByF('ranking')">순위</th>
+		      <th data-ng-click="sortByF('club')">구단</th>
+		      <th data-ng-click="sortByF('victory')">승</th>
+		      <th data-ng-click="sortByF('loss')">패</th>
+		      <th data-ng-click="sortByF('draw')">무승부</th>
+		      <th data-ng-click="sortByF('winningrate')">승률</th>
+		      <th data-ng-click="sortByF('continuous')">연속</th>
+		      <th data-ng-click="sortByF('hit')">안타</th>
+		      <th data-ng-click="sortByF('homerun')">홈런</th>
+		      <th data-ng-click="sortByF('steal')">도루</th>
+		      <th data-ng-click="sortByF('goal')">득점</th>
+		      <th data-ng-click="sortByF('lp')">실점</th>
+		      <th data-ng-click="sortByF('blunder')">실책</th>
 		    </tr>
 	    </thead>
 	    <tbody>
-		    <tr data-ng-repeat="rows in farmteam | orderBy:propertyName:reverse">
+		    <tr data-ng-class="{'heroes_tr' : rows.club == '화성'}" data-ng-repeat="rows in farmteam | orderBy:propertyNameF:reverseF">
 		    	<td data-ng-bind="rows.ranking"></td>
 		    	<td data-ng-bind="rows.club"></td>
 		    	<td data-ng-bind="rows.victory"></td>

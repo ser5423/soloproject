@@ -26,16 +26,34 @@ app.controller("players", function($scope, $rootScope, $http){
 		}
 	}
 	
+	$scope.bSPOArry = [{text:"2", text2:"2군",  toggle: false},
+					  {text:"1", text2:"1군",   toggle: false},
+					  {text:"전체", text2:"전체",  toggle: true}];
+	$scope.bSPOType = {};
+	
+	$scope.viewDivo = function(rows, index){
+		for(var i = 0; i < $scope.bSPOArry.length; i++){
+			$scope.bSPOArry[i].toggle = false;
+		}
+		$scope.bSPOArry[index].toggle = true;
+		
+		if(rows.text2 == "전체"){
+			$scope.bSPOType = {};
+		} else {
+			$scope.bSPOType.level = rows.text;
+		}
+	}
+
 	$scope.all = function(){
 		$http.post("all")
 			.then(function(result){
 				$scope.playersDataSources = result.data.all;
-//				console.log(result.data, $scope.playersDataSources);
-//				console.log(result.data.all[0]);
 			},function(result){
 				console.log("실패");
 			})
 	}
-	$scope.all();	
+	$scope.all();
+	
+	
 	
 });
